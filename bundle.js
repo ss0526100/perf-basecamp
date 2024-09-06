@@ -1450,6 +1450,55 @@ var __webpack_exports__ = {};
 var jsx_runtime = __webpack_require__(848);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(338);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+var injectStylesIntoStyleTag = __webpack_require__(72);
+var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleDomAPI.js
+var styleDomAPI = __webpack_require__(825);
+var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertBySelector.js
+var insertBySelector = __webpack_require__(659);
+var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+var setAttributesWithoutAttributes = __webpack_require__(56);
+var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertStyleElement.js
+var insertStyleElement = __webpack_require__(159);
+var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
+// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
+var styleTagTransform = __webpack_require__(113);
+var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/App.css
+var App = __webpack_require__(626);
+;// CONCATENATED MODULE: ./src/App.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (styleTagTransform_default());
+options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      options.insert = insertBySelector_default().bind(null, "head");
+    
+options.domAPI = (styleDomAPI_default());
+options.insertStyleElement = (insertStyleElement_default());
+
+var update = injectStylesIntoStyleTag_default()(App/* default */.A, options);
+
+
+
+
+       /* harmony default export */ const src_App = (App/* default */.A && App/* default */.A.locals ? App/* default */.A.locals : undefined);
+
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(540);
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
@@ -3526,6 +3575,45 @@ function createSearchParams(init) {
 
 //# sourceMappingURL=index.js.map
 
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/Footer/Footer.module.css
+var Footer_module = __webpack_require__(945);
+;// CONCATENATED MODULE: ./src/components/Footer/Footer.module.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var Footer_module_options = {};
+
+Footer_module_options.styleTagTransform = (styleTagTransform_default());
+Footer_module_options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      Footer_module_options.insert = insertBySelector_default().bind(null, "head");
+    
+Footer_module_options.domAPI = (styleDomAPI_default());
+Footer_module_options.insertStyleElement = (insertStyleElement_default());
+
+var Footer_module_update = injectStylesIntoStyleTag_default()(Footer_module/* default */.A, Footer_module_options);
+
+
+
+
+       /* harmony default export */ const Footer_Footer_module = (Footer_module/* default */.A && Footer_module/* default */.A.locals ? Footer_module/* default */.A.locals : undefined);
+
+;// CONCATENATED MODULE: ./src/components/Footer/Footer.tsx
+
+
+const Footer = () => {
+    return ((0,jsx_runtime.jsx)("footer", { children: (0,jsx_runtime.jsxs)("p", { children: ["(c) memegle. All rights reserved. Powered by\u00A0", (0,jsx_runtime.jsx)("a", Object.assign({ href: "https://giphy.com/" }, { children: "Giphy" })), "."] }) }));
+};
+/* harmony default export */ const Footer_Footer = (Footer);
+
 // EXTERNAL MODULE: ./node_modules/classnames/bind.js
 var bind = __webpack_require__(726);
 var bind_default = /*#__PURE__*/__webpack_require__.n(bind);
@@ -3537,24 +3625,6 @@ var bind_default = /*#__PURE__*/__webpack_require__.n(bind);
 /* harmony default export */ const find = (__webpack_require__.p + "static/find.gif");
 ;// CONCATENATED MODULE: ./src/assets/images/free.gif
 /* harmony default export */ const free = (__webpack_require__.p + "static/free.gif");
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
-var injectStylesIntoStyleTag = __webpack_require__(72);
-var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleDomAPI.js
-var styleDomAPI = __webpack_require__(825);
-var styleDomAPI_default = /*#__PURE__*/__webpack_require__.n(styleDomAPI);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertBySelector.js
-var insertBySelector = __webpack_require__(659);
-var insertBySelector_default = /*#__PURE__*/__webpack_require__.n(insertBySelector);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
-var setAttributesWithoutAttributes = __webpack_require__(56);
-var setAttributesWithoutAttributes_default = /*#__PURE__*/__webpack_require__.n(setAttributesWithoutAttributes);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/insertStyleElement.js
-var insertStyleElement = __webpack_require__(159);
-var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleElement);
-// EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
-var styleTagTransform = __webpack_require__(113);
-var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
 // EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/pages/Home/components/FeatureItem/FeatureItem.module.css
 var FeatureItem_module = __webpack_require__(462);
 ;// CONCATENATED MODULE: ./src/pages/Home/components/FeatureItem/FeatureItem.module.css
@@ -3569,17 +3639,17 @@ var FeatureItem_module = __webpack_require__(462);
       
       
 
-var options = {};
+var FeatureItem_module_options = {};
 
-options.styleTagTransform = (styleTagTransform_default());
-options.setAttributes = (setAttributesWithoutAttributes_default());
+FeatureItem_module_options.styleTagTransform = (styleTagTransform_default());
+FeatureItem_module_options.setAttributes = (setAttributesWithoutAttributes_default());
 
-      options.insert = insertBySelector_default().bind(null, "head");
+      FeatureItem_module_options.insert = insertBySelector_default().bind(null, "head");
     
-options.domAPI = (styleDomAPI_default());
-options.insertStyleElement = (insertStyleElement_default());
+FeatureItem_module_options.domAPI = (styleDomAPI_default());
+FeatureItem_module_options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(FeatureItem_module/* default */.A, options);
+var FeatureItem_module_update = injectStylesIntoStyleTag_default()(FeatureItem_module/* default */.A, FeatureItem_module_options);
 
 
 
@@ -3802,6 +3872,46 @@ const Home = () => {
     return ((0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [(0,jsx_runtime.jsxs)("section", Object.assign({ className: Home_Home_module.heroSection }, { children: [(0,jsx_runtime.jsx)("img", { className: Home_Home_module.heroImage, src: hero, alt: "hero image" }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_Home_module.projectTitle }, { children: [(0,jsx_runtime.jsx)("h1", Object.assign({ className: Home_Home_module.title }, { children: "Memegle" })), (0,jsx_runtime.jsx)("h3", Object.assign({ className: Home_Home_module.subtitle }, { children: "gif search engine for you" }))] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: cx('cta', 'linkButton') }, { children: "start search" })) }))] })), (0,jsx_runtime.jsxs)("section", Object.assign({ ref: wrapperRef, className: Home_Home_module.featureSection }, { children: [(0,jsx_runtime.jsx)(AnimatedPath_AnimatedPath, { wrapperRef: wrapperRef }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_Home_module.featureSectionWrapper }, { children: [(0,jsx_runtime.jsx)("h2", Object.assign({ className: Home_Home_module.featureTitle }, { children: "Features" })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_Home_module.featureItemContainer }, { children: [(0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "See trending gif", imageSrc: trending }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Find gif for free", imageSrc: find }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Free for everyone", imageSrc: free })] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: Home_Home_module.linkButton }, { children: "start search" })) }))] }))] })), (0,jsx_runtime.jsx)(CustomCursor_CustomCursor, { text: "memegle" })] }));
 };
 /* harmony default export */ const Home_Home = (Home);
+
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/NavBar/NavBar.module.css
+var NavBar_module = __webpack_require__(627);
+;// CONCATENATED MODULE: ./src/components/NavBar/NavBar.module.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var NavBar_module_options = {};
+
+NavBar_module_options.styleTagTransform = (styleTagTransform_default());
+NavBar_module_options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      NavBar_module_options.insert = insertBySelector_default().bind(null, "head");
+    
+NavBar_module_options.domAPI = (styleDomAPI_default());
+NavBar_module_options.insertStyleElement = (insertStyleElement_default());
+
+var NavBar_module_update = injectStylesIntoStyleTag_default()(NavBar_module/* default */.A, NavBar_module_options);
+
+
+
+
+       /* harmony default export */ const NavBar_NavBar_module = (NavBar_module/* default */.A && NavBar_module/* default */.A.locals ? NavBar_module/* default */.A.locals : undefined);
+
+;// CONCATENATED MODULE: ./src/components/NavBar/NavBar.tsx
+
+
+
+const NavBar = () => {
+    return ((0,jsx_runtime.jsx)("header", Object.assign({ className: NavBar_NavBar_module.header }, { children: (0,jsx_runtime.jsxs)("nav", Object.assign({ className: NavBar_NavBar_module.nav }, { children: [(0,jsx_runtime.jsx)(Link, Object.assign({ to: "/" }, { children: (0,jsx_runtime.jsx)("span", Object.assign({ className: NavBar_NavBar_module.logo }, { children: "memegle" })) })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: NavBar_NavBar_module.searchPageButton }, { children: "start search" })) }))] })) })));
+};
+/* harmony default export */ const NavBar_NavBar = (NavBar);
 
 ;// CONCATENATED MODULE: ./src/utils/apiClient.ts
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -6971,116 +7081,6 @@ const Search = () => {
 };
 /* harmony default export */ const Search_Search = (Search);
 
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/NavBar/NavBar.module.css
-var NavBar_module = __webpack_require__(627);
-;// CONCATENATED MODULE: ./src/components/NavBar/NavBar.module.css
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var NavBar_module_options = {};
-
-NavBar_module_options.styleTagTransform = (styleTagTransform_default());
-NavBar_module_options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      NavBar_module_options.insert = insertBySelector_default().bind(null, "head");
-    
-NavBar_module_options.domAPI = (styleDomAPI_default());
-NavBar_module_options.insertStyleElement = (insertStyleElement_default());
-
-var NavBar_module_update = injectStylesIntoStyleTag_default()(NavBar_module/* default */.A, NavBar_module_options);
-
-
-
-
-       /* harmony default export */ const NavBar_NavBar_module = (NavBar_module/* default */.A && NavBar_module/* default */.A.locals ? NavBar_module/* default */.A.locals : undefined);
-
-;// CONCATENATED MODULE: ./src/components/NavBar/NavBar.tsx
-
-
-
-const NavBar = () => {
-    return ((0,jsx_runtime.jsx)("header", Object.assign({ className: NavBar_NavBar_module.header }, { children: (0,jsx_runtime.jsxs)("nav", Object.assign({ className: NavBar_NavBar_module.nav }, { children: [(0,jsx_runtime.jsx)(Link, Object.assign({ to: "/" }, { children: (0,jsx_runtime.jsx)("span", Object.assign({ className: NavBar_NavBar_module.logo }, { children: "memegle" })) })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: NavBar_NavBar_module.searchPageButton }, { children: "start search" })) }))] })) })));
-};
-/* harmony default export */ const NavBar_NavBar = (NavBar);
-
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/components/Footer/Footer.module.css
-var Footer_module = __webpack_require__(945);
-;// CONCATENATED MODULE: ./src/components/Footer/Footer.module.css
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var Footer_module_options = {};
-
-Footer_module_options.styleTagTransform = (styleTagTransform_default());
-Footer_module_options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      Footer_module_options.insert = insertBySelector_default().bind(null, "head");
-    
-Footer_module_options.domAPI = (styleDomAPI_default());
-Footer_module_options.insertStyleElement = (insertStyleElement_default());
-
-var Footer_module_update = injectStylesIntoStyleTag_default()(Footer_module/* default */.A, Footer_module_options);
-
-
-
-
-       /* harmony default export */ const Footer_Footer_module = (Footer_module/* default */.A && Footer_module/* default */.A.locals ? Footer_module/* default */.A.locals : undefined);
-
-;// CONCATENATED MODULE: ./src/components/Footer/Footer.tsx
-
-
-const Footer = () => {
-    return ((0,jsx_runtime.jsx)("footer", { children: (0,jsx_runtime.jsxs)("p", { children: ["(c) memegle. All rights reserved. Powered by\u00A0", (0,jsx_runtime.jsx)("a", Object.assign({ href: "https://giphy.com/" }, { children: "Giphy" })), "."] }) }));
-};
-/* harmony default export */ const Footer_Footer = (Footer);
-
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./src/App.css
-var App = __webpack_require__(626);
-;// CONCATENATED MODULE: ./src/App.css
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var App_options = {};
-
-App_options.styleTagTransform = (styleTagTransform_default());
-App_options.setAttributes = (setAttributesWithoutAttributes_default());
-
-      App_options.insert = insertBySelector_default().bind(null, "head");
-    
-App_options.domAPI = (styleDomAPI_default());
-App_options.insertStyleElement = (insertStyleElement_default());
-
-var App_update = injectStylesIntoStyleTag_default()(App/* default */.A, App_options);
-
-
-
-
-       /* harmony default export */ const src_App = (App/* default */.A && App/* default */.A.locals ? App/* default */.A.locals : undefined);
-
 ;// CONCATENATED MODULE: ./src/App.tsx
 
 
@@ -7090,7 +7090,7 @@ var App_update = injectStylesIntoStyleTag_default()(App/* default */.A, App_opti
 
 
 const App_App = () => {
-    return ((0,jsx_runtime.jsxs)(BrowserRouter, Object.assign({ basename: '/perf-basecamp' }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
+    return ((0,jsx_runtime.jsxs)(BrowserRouter, Object.assign({ basename: "MISSING_ENV_VAR".PUBLIC_URL }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
 };
 /* harmony default export */ const src_App_0 = (App_App);
 
